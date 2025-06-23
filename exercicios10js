@@ -1,0 +1,14 @@
+const prompt = require("prompt-sync")();
+
+   let potencia = Number(prompt("digite a potencia em horas (em KW):"));
+   let tempo =  Number(prompt("digite o tempo ligado (em horas)" ));
+   let valorKwh = Number(prompt("digite o numero de dias:"));
+ let KmRodado =  Number(prompt("digite o valor do Kwh (em reais):" ));
+
+  let energiaGasta = potencia * tempo;
+let valorPago = energiaGasta * valorKwh;
+
+console.log("energia total gasta:" + energiaGasta.toFixed(2) + "Kwh");
+console.log("valor a pago: R$ " + valorPago.toFixed(2));
+
+
